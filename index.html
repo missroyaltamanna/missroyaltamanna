@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tamanna — Web Developer &amp; Software Engineering Student</title>
+  <meta name="description" content="Portfolio of Tamanna, a web developer and 7th-semester BS Software Engineering student building clean, responsive and meaningful digital experiences.">
+  <meta name="theme-color" content="#F8F7F4">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&amp;family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Icon sprite: referenced below with <use href="#i-…"> -->
+  <svg class="sprite" width="0" height="0" aria-hidden="true" focusable="false">
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M3 12h17M14 6l6 6-6 6"/></symbol>
+    <symbol id="i-arrow-up-right" viewBox="0 0 24 24"><path d="M6 18 18 6M8 6h10v10"/></symbol>
+    <symbol id="i-arrow-down" viewBox="0 0 24 24"><path d="M12 3v17M6 14l6 6 6-6"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M12 21V4M6 10l6-6 6 6"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M4 20h16"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path d="M3 5.5h18v13H3zM3 6l9 7 9-7"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-5.8-6.5-11a6.5 6.5 0 0 1 13 0c0 5.2-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.5c0-1.3-.02-3-1.83-3-1.83 0-2.12 1.43-2.12 2.9V21H9z"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============================================================
+       01 — NAVIGATION
+       ============================================================ -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a class="wordmark" href="#home" aria-label="Tamanna — back to top">Tamanna</a>
+
+      <!-- CSS-only mobile menu: the checkbox controls the panel below -->
+      <input class="nav__toggle" type="checkbox" id="nav-toggle" aria-label="Toggle navigation menu">
+      <label class="nav__burger" for="nav-toggle" aria-hidden="true">
+        <span></span><span></span>
+      </label>
+
+      <div class="nav__menu">
+        <ul class="nav__links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a class="nav__cv" href="assets/documents/tamanna-cv.pdf" download>
+          Download CV
+          <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============================================================
+         02 — HERO
+         ============================================================ -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+
+        <div class="hero__content">
+          <p class="eyebrow hero__eyebrow">Hello, I'm</p>
+          <h1 class="hero__title" id="hero-title">Tamanna</h1>
+          <p class="hero__role">Web Developer <span class="hero__amp">&amp;</span> Software&nbsp;Engineering&nbsp;Student</p>
+          <p class="hero__intro">
+            I'm a passionate web developer and a 7th-semester BS Software Engineering student,
+            interested in building clean, responsive, and meaningful digital experiences through
+            modern web technologies.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#projects">
+              Explore My Work
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+            </a>
+            <a class="btn btn--ghost" href="assets/documents/tamanna-cv.pdf" download>
+              Download CV
+              <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>
+            </a>
+          </div>
+
+          <p class="status"><span class="status__dot" aria-hidden="true"></span>Open to Internship &amp; Opportunities</p>
+        </div>
+
+        <figure class="hero__portrait">
+          <div class="portrait-frame">
+            <!-- Replace assets/images/profile.jpg with a 4:5 portrait (e.g. 1200 × 1500 px) -->
+            <img src="assets/images/profile.jpg" alt="Portrait of Tamanna" width="1200" height="1500">
+          </div>
+          <figcaption class="hero__caption">
+            <span class="hero__caption-index">Fig. 01</span>
+            <span>Tamanna — Lahore, 2026</span>
+          </figcaption>
+          <p class="hero__vertical" aria-hidden="true">Portfolio &mdash; 2026</p>
+        </figure>
+
+      </div>
+
+      <div class="container">
+        <div class="hero__meta">
+          <dl class="hero__facts">
+            <div>
+              <dt>Currently</dt>
+              <dd>BSSE, 7th Semester</dd>
+            </div>
+            <div>
+              <dt>Focus</dt>
+              <dd>Frontend &amp; Responsive Web</dd>
+            </div>
+            <div>
+              <dt>Based in</dt>
+              <dd>Lahore, Pakistan</dd>
+            </div>
+          </dl>
+          <a class="scroll-cue" href="#about">
+            Scroll
+            <svg class="icon" aria-hidden="true"><use href="#i-arrow-down"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         03 — ABOUT
+         ============================================================ -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container split">
+
+        <header class="section-head split__aside reveal">
+          <p class="section-label"><span class="section-label__num">01</span> / About</p>
+          <h2 class="section-title" id="about-title">A Little About Me</h2>
+        </header>
+
+        <div class="split__main">
+          <p class="lead reveal">
+            I'm Tamanna — a web developer in the 7th semester of my BS in Software Engineering,
+            focused on building interfaces that are clean, responsive and carefully considered.
+          </p>
+
+          <div class="about__body">
+            <p>
+              Alongside my degree, I'm developing my skills in frontend development, responsive web
+              design and modern web technologies. I care about structured, readable code and about
+              interfaces that work just as well on a small phone as they do on a wide desktop screen.
+            </p>
+            <p>
+              I enjoy approaching problems creatively — breaking them into clear steps and finding
+              solutions that are simple to use and easy to maintain. Learning is a constant part of
+              how I work, and every project is a chance to understand something more deeply.
+            </p>
+          </div>
+
+          <ol class="principles" aria-label="What I focus on">
+            <li class="principles__item">
+              <h3 class="principles__title">Web Development</h3>
+              <p>A genuine interest in building for the web, from structure to interaction.</p>
+            </li>
+            <li class="principles__item">
+              <h3 class="principles__title">Clean, Structured Code</h3>
+              <p>Semantic markup, organised stylesheets and logic that is easy to read.</p>
+            </li>
+            <li class="principles__item">
+              <h3 class="principles__title">Responsive Interfaces</h3>
+              <p>Layouts that adapt gracefully to every screen size and device.</p>
+            </li>
+            <li class="principles__item">
+              <h3 class="principles__title">Continuous Learning</h3>
+              <p>Consistently expanding my technical knowledge and practical toolkit.</p>
+            </li>
+            <li class="principles__item">
+              <h3 class="principles__title">Creative Problem-Solving</h3>
+              <p>Thinking problems through carefully to arrive at clear, simple solutions.</p>
+            </li>
+          </ol>
+
+          <dl class="details" aria-label="Personal details">
+            <div class="details__row"><dt>Name</dt><dd>Tamanna</dd></div>
+            <div class="details__row"><dt>Degree</dt><dd>BS Software Engineering</dd></div>
+            <div class="details__row"><dt>Semester</dt><dd>7th</dd></div>
+            <div class="details__row"><dt>Role</dt><dd>Web Developer</dd></div>
+            <div class="details__row"><dt>Location</dt><dd>Lahore, Pakistan</dd></div>
+          </dl>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         04 — SKILLS
+         ============================================================ -->
+    <section class="section section--surface" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+
+        <header class="section-head section-head--row reveal">
+          <div>
+            <p class="section-label"><span class="section-label__num">02</span> / Expertise</p>
+            <h2 class="section-title" id="skills-title">Tools &amp; Technologies</h2>
+          </div>
+          <p class="section-intro">
+            The languages, frameworks and tools I work with — listed honestly, without
+            percentage bars, and updated as I learn.
+          </p>
+        </header>
+
+        <div class="skills">
+          <article class="skills__group">
+            <p class="skills__index">01</p>
+            <h3 class="skills__title">Frontend Development</h3>
+            <ul class="skills__list">
+              <li><span>HTML5</span><small>Semantic markup</small></li>
+              <li><span>CSS3</span><small>Layout &amp; styling</small></li>
+              <li><span>JavaScript</span><small>Interactivity</small></li>
+              <!-- Optional — uncomment only the ones Tamanna actually uses:
+              <li><span>React.js</span><small>Component UI</small></li>
+              <li><span>Bootstrap</span><small>UI framework</small></li>
+              <li><span>Tailwind CSS</span><small>Utility CSS</small></li>
+              -->
+            </ul>
+          </article>
+
+          <article class="skills__group">
+            <p class="skills__index">02</p>
+            <h3 class="skills__title">Programming</h3>
+            <ul class="skills__list">
+              <li><span>C++</span><small>Object-oriented</small></li>
+              <li><span>Python</span><small>Scripting</small></li>
+              <li><span>JavaScript</span><small>Web programming</small></li>
+            </ul>
+          </article>
+
+          <article class="skills__group">
+            <p class="skills__index">03</p>
+            <h3 class="skills__title">Tools</h3>
+            <ul class="skills__list">
+              <li><span>Git</span><small>Version control</small></li>
+              <li><span>GitHub</span><small>Collaboration</small></li>
+              <li><span>VS Code</span><small>Editor</small></li>
+              <li><span>Figma</span><small>Interface design</small></li>
+            </ul>
+          </article>
+        </div>
+
+        <p class="practices">
+          <span>Responsive Design</span>
+          <span>Semantic HTML</span>
+          <span>Mobile-First Layouts</span>
+          <span>Clean Code</span>
+        </p>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         05 — PROJECTS
+         Each project is a placeholder. Replace title, description,
+         technologies, image and the two links with real details.
+         ============================================================ -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+
+        <header class="section-head section-head--row reveal">
+          <div>
+            <p class="section-label"><span class="section-label__num">03</span> / Selected Work</p>
+            <h2 class="section-title" id="projects-title">Projects That Reflect My Work</h2>
+          </div>
+          <p class="section-intro">
+            A small selection of projects, presented as short case studies — what each one is,
+            how it was built and where to see it.
+          </p>
+        </header>
+
+        <!-- SAMPLE PROJECTS — replace titles, text, images and links with real work -->
+        <div class="projects">
+
+          <article class="project project--feature reveal">
+            <a class="project__media" href="https://example.com" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+              <img src="assets/images/project-01.jpg" alt="" width="1600" height="1200" loading="lazy">
+            </a>
+            <div class="project__body">
+              <p class="project__meta"><span>01</span><span>Landing Page</span><span>2026</span></p>
+              <h3 class="project__title">Maison Bloom</h3>
+              <p class="project__desc">
+                A responsive landing page for a boutique florist concept, built around large
+                editorial typography, a soft seasonal palette and a clear path from browsing to
+                ordering. Fully mobile-first, with no frameworks.
+              </p>
+              <ul class="project__tech" aria-label="Technologies used">
+                <li>HTML5</li><li>CSS3</li><li>CSS Grid</li><li>Flexbox</li>
+              </ul>
+              <p class="project__links">
+                <a class="link" href="https://example.com" target="_blank" rel="noopener">Live Demo <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+                <a class="link" href="https://github.com/your-username/maison-bloom" target="_blank" rel="noopener">Source Code <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+              </p>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <a class="project__media" href="https://example.com" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+              <img src="assets/images/project-02.jpg" alt="" width="1600" height="1200" loading="lazy">
+            </a>
+            <div class="project__body">
+              <p class="project__meta"><span>02</span><span>Web App</span><span>2025</span></p>
+              <h3 class="project__title">TaskNest</h3>
+              <p class="project__desc">
+                A clean task manager for organising study and personal work, with lists,
+                filters, progress tracking and tasks that persist in the browser between visits.
+              </p>
+              <ul class="project__tech" aria-label="Technologies used">
+                <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Local Storage</li>
+              </ul>
+              <p class="project__links">
+                <a class="link" href="https://example.com" target="_blank" rel="noopener">Live Demo <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+                <a class="link" href="https://github.com/your-username/tasknest" target="_blank" rel="noopener">Source Code <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+              </p>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <a class="project__media" href="https://example.com" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+              <img src="assets/images/project-03.jpg" alt="" width="1600" height="1200" loading="lazy">
+            </a>
+            <div class="project__body">
+              <p class="project__meta"><span>03</span><span>Dashboard</span><span>2025</span></p>
+              <h3 class="project__title">Skyline Weather</h3>
+              <p class="project__desc">
+                A weather dashboard that fetches live conditions and a seven-day forecast for any
+                city, presenting the data in a calm, readable card layout.
+              </p>
+              <ul class="project__tech" aria-label="Technologies used">
+                <li>JavaScript</li><li>Fetch API</li><li>REST API</li><li>CSS3</li>
+              </ul>
+              <p class="project__links">
+                <a class="link" href="https://example.com" target="_blank" rel="noopener">Live Demo <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+                <a class="link" href="https://github.com/your-username/skyline-weather" target="_blank" rel="noopener">Source Code <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+              </p>
+            </div>
+          </article>
+
+          <article class="project project--feature project--reverse reveal">
+            <a class="project__media" href="https://example.com" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+              <img src="assets/images/project-04.jpg" alt="" width="1600" height="1200" loading="lazy">
+            </a>
+            <div class="project__body">
+              <p class="project__meta"><span>04</span><span>Semester Project</span><span>2025</span></p>
+              <h3 class="project__title">Campus Connect</h3>
+              <p class="project__desc">
+                A university events portal where students can discover seminars, workshops and
+                society activities. Designed in Figma first, then built as a multi-page responsive
+                website.
+              </p>
+              <ul class="project__tech" aria-label="Technologies used">
+                <li>Figma</li><li>HTML5</li><li>CSS3</li><li>JavaScript</li>
+              </ul>
+              <p class="project__links">
+                <a class="link" href="https://example.com" target="_blank" rel="noopener">Live Demo <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+                <a class="link" href="https://github.com/your-username/campus-connect" target="_blank" rel="noopener">Source Code <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+              </p>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="projects__more">
+          <a class="link" href="https://github.com/your-username" target="_blank" rel="noopener">
+            More work on GitHub
+            <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+          </a>
+        </p>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         06 — EDUCATION
+         ============================================================ -->
+    <section class="section section--surface" id="education" aria-labelledby="education-title">
+      <div class="container split">
+
+        <header class="section-head split__aside reveal">
+          <p class="section-label"><span class="section-label__num">04</span> / Education</p>
+          <h2 class="section-title" id="education-title">Academic Background</h2>
+        </header>
+
+        <div class="split__main">
+          <!-- SAMPLE DATA — replace university, dates and achievements -->
+          <ol class="timeline">
+            <li class="timeline__item">
+              <div class="edu__head">
+                <p class="edu__period">2023 — Present</p>
+                <p class="edu__status">Currently Studying</p>
+              </div>
+              <h3 class="edu__degree">BS Software Engineering <span>(BSSE)</span></h3>
+              <p class="edu__school">University of Lahore <span aria-hidden="true">·</span> 7th Semester <span aria-hidden="true">·</span> Expected 2027</p>
+
+              <div class="edu__details">
+                <div>
+                  <h4 class="edu__label">Relevant Coursework</h4>
+                  <!-- Edit to match your transcript -->
+                  <ul class="edu__list">
+                    <li>Object-Oriented Programming</li>
+                    <li>Data Structures &amp; Algorithms</li>
+                    <li>Database Systems</li>
+                    <li>Web Engineering</li>
+                    <li>Software Requirements Engineering</li>
+                    <li>Software Design &amp; Architecture</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="edu__label">Academic Achievements</h4>
+                  <ul class="edu__list">
+                    <li>Dean's Honour List, Spring 2025</li>
+                    <li>CGPA 3.6 / 4.0</li>
+                    <li>Best Semester Project, Web Engineering</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="edu__label">Technical Learning</h4>
+                  <ul class="edu__list">
+                    <li>Responsive layouts with CSS Grid &amp; Flexbox</li>
+                    <li>JavaScript DOM &amp; Fetch API</li>
+                    <li>Git branching &amp; collaboration</li>
+                    <li>UI wireframing in Figma</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li class="timeline__item">
+              <div class="edu__head">
+                <p class="edu__period">2021 — 2023</p>
+                <p class="edu__status edu__status--done">Completed</p>
+              </div>
+              <h3 class="edu__degree">Intermediate <span>(FSc Pre-Engineering)</span></h3>
+              <p class="edu__school">Punjab Group of Colleges, Lahore <span aria-hidden="true">·</span> Grade A</p>
+            </li>
+          </ol>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         07 — CERTIFICATIONS & LEARNING
+         SAMPLE ENTRIES — replace with real certificates.
+         A row whose title is left completely empty
+         (<h3 class="learning__title"></h3>) is hidden automatically.
+         ============================================================ -->
+    <section class="section" id="learning" aria-labelledby="learning-title">
+      <div class="container">
+
+        <header class="section-head section-head--row reveal">
+          <div>
+            <p class="section-label"><span class="section-label__num">05</span> / Continuous Learning</p>
+            <h2 class="section-title" id="learning-title">Learning &amp; Development</h2>
+          </div>
+          <p class="section-intro">
+            A running record of certifications, courses and workshops that continue to shape
+            how I work.
+          </p>
+        </header>
+
+        <ol class="learning">
+          <li class="learning__item">
+            <span class="learning__type">Certification</span>
+            <div>
+              <h3 class="learning__title">Responsive Web Design</h3>
+              <p class="learning__issuer">freeCodeCamp</p>
+            </div>
+            <span class="learning__year">2024</span>
+          </li>
+          <li class="learning__item">
+            <span class="learning__type">Course</span>
+            <div>
+              <h3 class="learning__title">JavaScript Algorithms &amp; Data Structures</h3>
+              <p class="learning__issuer">freeCodeCamp</p>
+            </div>
+            <span class="learning__year">2025</span>
+          </li>
+          <li class="learning__item">
+            <span class="learning__type">Course</span>
+            <div>
+              <h3 class="learning__title">Introduction to Git and GitHub</h3>
+              <p class="learning__issuer">Google · Coursera</p>
+            </div>
+            <span class="learning__year">2024</span>
+          </li>
+          <li class="learning__item">
+            <span class="learning__type">Workshop</span>
+            <div>
+              <h3 class="learning__title">Web Development Bootcamp</h3>
+              <p class="learning__issuer">University Computing Society</p>
+            </div>
+            <span class="learning__year">2025</span>
+          </li>
+          <li class="learning__item">
+            <span class="learning__type">Achievement</span>
+            <div>
+              <h3 class="learning__title">Dean's Honour List</h3>
+              <p class="learning__issuer">University of Lahore</p>
+            </div>
+            <span class="learning__year">2025</span>
+          </li>
+        </ol>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         08 — CONTACT
+         ============================================================ -->
+    <section class="section section--contact" id="contact" aria-labelledby="contact-title">
+      <div class="container contact">
+
+        <div class="contact__intro">
+          <header class="section-head reveal">
+            <p class="section-label"><span class="section-label__num">06</span> / Get in Touch</p>
+            <h2 class="section-title section-title--xl" id="contact-title">Let's Connect &amp; Create Something Meaningful.</h2>
+          </header>
+          <p class="contact__text">
+            I'm always interested in connecting with people, exploring new opportunities, and
+            working on meaningful digital experiences.
+          </p>
+
+          <!-- Replace the placeholder email, profile URLs and location -->
+          <ul class="channels">
+            <li>
+              <a class="channel" href="mailto:tamanna@example.com">
+                <span class="channel__label"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>Email</span>
+                <span class="channel__value">tamanna@example.com</span>
+                <svg class="icon channel__arrow" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+              </a>
+            </li>
+            <li>
+              <a class="channel" href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener">
+                <span class="channel__label"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg>LinkedIn</span>
+                <span class="channel__value">in/your-profile</span>
+                <svg class="icon channel__arrow" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+              </a>
+            </li>
+            <li>
+              <a class="channel" href="https://github.com/your-username" target="_blank" rel="noopener">
+                <span class="channel__label"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>GitHub</span>
+                <span class="channel__value">@your-username</span>
+                <svg class="icon channel__arrow" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+              </a>
+            </li>
+            <li>
+              <p class="channel channel--static">
+                <span class="channel__label"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Location</span>
+                <span class="channel__value">Lahore, Pakistan</span>
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <!--
+          Contact form
+          HTML and CSS cannot send form data on their own. For now the form
+          uses a mailto: action, which opens the visitor's email app with the
+          message filled in. To connect a backend later (e.g. Formspree,
+          Netlify Forms or your own server), replace the action, method and
+          enctype attributes below with your endpoint.
+        -->
+        <form class="form" action="mailto:tamanna@example.com" method="post" enctype="text/plain">
+          <p class="form__heading">Send a message</p>
+
+          <div class="form__grid">
+            <div class="field">
+              <label for="name">Name <span aria-hidden="true">*</span></label>
+              <input id="name" name="name" type="text" autocomplete="name" placeholder="Your full name" required>
+            </div>
+            <div class="field">
+              <label for="email">Email <span aria-hidden="true">*</span></label>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+            </div>
+            <div class="field field--full">
+              <label for="subject">Subject</label>
+              <input id="subject" name="subject" type="text" placeholder="What is this about?">
+            </div>
+            <div class="field field--full">
+              <label for="message">Message <span aria-hidden="true">*</span></label>
+              <textarea id="message" name="message" rows="5" placeholder="Write your message here…" required></textarea>
+            </div>
+          </div>
+
+          <div class="form__footer">
+            <button class="btn btn--primary" type="submit">
+              Send Message
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+            </button>
+            <p class="form__note">
+              Opens your email app. You can also write directly to
+              <a href="mailto:tamanna@example.com">tamanna@example.com</a>.
+            </p>
+          </div>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       09 — FOOTER
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="container">
+
+      <p class="footer__wordmark" aria-hidden="true">Tamanna</p>
+
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <p class="footer__tagline">Web developer building clean, responsive and meaningful digital experiences.</p>
+          <p class="status status--dark"><span class="status__dot" aria-hidden="true"></span>Open to Internship &amp; Opportunities</p>
+        </div>
+
+        <nav aria-label="Footer">
+          <h2 class="footer__heading">Navigate</h2>
+          <ul class="footer__links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <h2 class="footer__heading">Elsewhere</h2>
+          <ul class="footer__links">
+            <li><a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="mailto:tamanna@example.com">Email</a></li>
+            <li><a href="assets/documents/tamanna-cv.pdf" download>Download CV</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <!-- Update the year here each January -->
+        <p>&copy; 2026 Tamanna. All rights reserved.</p>
+        <p>Designed &amp; built with HTML and CSS.</p>
+        <a class="footer__top" href="#home">
+          Back to top
+          <svg class="icon" aria-hidden="true"><use href="#i-arrow-up"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
